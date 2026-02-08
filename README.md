@@ -1,55 +1,90 @@
-📌 Project Overview
+# House Price Prediction – Data Science & Machine Learning Project
 
-This project builds and evaluates machine learning models to predict residential housing prices using structured real-estate data. The focus is on understanding key price drivers and comparing multiple regression models within a complete machine learning pipeline.
+## Overview
+This project explores the factors that influence residential house prices and applies
+machine learning techniques to predict sale prices using the Kaggle
+**House Prices: Advanced Regression Techniques** dataset.
 
-The goal is not leaderboard optimization, but demonstrating a clear, reproducible workflow for feature engineering, model tuning, and evaluation.
----------------------------------------------------------
-🎯 Objectives
+The primary focus is on **exploratory data analysis (EDA)** and **feature understanding**,
+with machine learning used as a supporting tool to evaluate predictive performance.
 
-Analyze factors that influence housing prices
+---
 
-Handle mixed numerical and categorical features
+## Project Objective
+- Analyze how property characteristics such as size, quality, and location impact sale price
+- Use visual exploration to uncover patterns, distributions, and relationships in the data
+- Prepare a clean, structured dataset suitable for regression modeling
+- Compare multiple models and evaluate their effectiveness
 
-Compare baseline and ensemble regression models
+---
 
-Select a best-performing model using validation metrics
----------------------------------------------------------
-🧠 Workflow
+## Dataset
+Source: Kaggle – *House Prices: Advanced Regression Techniques*
 
-Data cleaning and exploratory data analysis
+The dataset includes detailed residential property attributes such as:
+- Structural features (square footage, rooms, lot size)
+- Quality and condition ratings
+- Neighborhood and location variables
+- Final sale price (target variable)
 
-Categorical encoding using OneHotEncoder
+---
 
-Pipeline construction for preprocessing and modeling
+## Exploratory Data Analysis (EDA)
+EDA was conducted to better interpret price behavior and feature relationships, including:
+- Distribution analysis of sale prices and numerical predictors
+- Visualization of sale price against key features (e.g., living area, quality, lot size)
+- Identification of missing values and outliers
+- Analysis of categorical variables and their influence on pricing
 
-Hyperparameter tuning with GridSearchCV
+Insights from EDA directly informed preprocessing and feature engineering decisions.
 
-Model comparison and selection
+---
 
-Final inference using the selected model
----------------------------------------------------------
-🤖 Models Used
+## Data Preparation & Feature Engineering
+- Cleaned and standardized numerical variables
+- Engineered additional features to better capture property characteristics
+- Applied categorical encoding using `OneHotEncoder`
+- Prepared model-ready datasets for regression analysis
 
-Linear Regression (baseline)
+---
 
-Random Forest Regressor
+## Modeling & Evaluation
+The following models were trained and evaluated:
+- Linear Regression
+- Random Forest Regression
+- XGBoost Regression
 
-XGBoost Regressor (best-performing model)
----------------------------------------------------------
-📊 Results & Insights
+Model performance was assessed using cross-validation, and hyperparameter tuning was
+performed with `GridSearchCV`. Among the evaluated models, **XGBoost demonstrated the
+strongest predictive performance** and was selected as the final model.
 
-Tree-based ensemble models outperformed linear regression, highlighting the importance of capturing non-linear relationships and feature interactions. After tuning, XGBoost achieved the strongest predictive performance.
----------------------------------------------------------
-📂 Dataset
+---
 
-Source: House Prices: Advanced Regression Techniques (Kaggle)
+## Results & Key Observations
+- Sale price shows strong relationships with overall quality, living area, and neighborhood
+- Feature engineering and proper handling of categorical variables significantly improved results
+- Model performance was driven more by data preparation and feature understanding than
+  model complexity alone
 
-Contains residential property attributes such as location, size, condition, and amenities
----------------------------------------------------------
-📝 Notes
+---
 
-Kaggle submission file generation is environment-specific and not the primary focus of this project
+## Tools & Technologies
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- XGBoost
+- Plotly
+- Jupyter Notebook
 
-Emphasis is placed on model development, tuning, and evaluation, rather than competition mechanics
+---
 
-This notebook is intended to demonstrate applied machine learning practices on a real-world regression problem
+## Notes
+This repository emphasizes the complete data science workflow, including data exploration,
+feature engineering, and model evaluation. Kaggle submission file generation is
+environment-specific and not the primary focus of this project.
+
+---
+
+## Project Files
+- `House Price Prediction.ipynb` – Main notebook containing EDA, preprocessing, modeling, and evaluation
+- `data_description.txt` – Dataset feature descriptions provided by Kaggle
