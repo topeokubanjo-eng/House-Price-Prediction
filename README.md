@@ -1,4 +1,4 @@
-# House Price Prediction (Kaggle)
+# House Price Prediction 
 
 ## Overview
 End-to-end machine learning project predicting residential house prices using the Kaggle
