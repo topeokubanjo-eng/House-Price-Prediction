@@ -1,56 +1,55 @@
-House Price Prediction Using Machine Learning
-Project Overview
+📌 Project Overview
 
-This project focuses on building and evaluating machine learning models to predict residential housing prices using structured real-estate data. The goal is to explore how different modeling approaches perform on a complex regression problem involving categorical and numerical features, and to identify the most effective model through systematic tuning and evaluation.
+This project builds and evaluates machine learning models to predict residential housing prices using structured real-estate data. The focus is on understanding key price drivers and comparing multiple regression models within a complete machine learning pipeline.
 
-Rather than optimizing for leaderboard placement, the emphasis is on the end-to-end machine learning workflow: data preparation, feature engineering, model selection, and performance comparison.
+The goal is not leaderboard optimization, but demonstrating a clear, reproducible workflow for feature engineering, model tuning, and evaluation.
 
-Key Objectives
+🎯 Objectives
 
-Understand the factors that influence housing prices
+Analyze factors that influence housing prices
 
-Apply feature engineering techniques to mixed data types
+Handle mixed numerical and categorical features
 
-Compare multiple regression models using consistent evaluation methods
+Compare baseline and ensemble regression models
 
-Select a best-performing model based on predictive performance and generalization
+Select a best-performing model using validation metrics
 
-Methodology
+🧠 Workflow
 
 Data cleaning and exploratory data analysis
 
-Categorical feature encoding using OneHotEncoder
+Categorical encoding using OneHotEncoder
 
-Pipeline construction for reproducible preprocessing and modeling
+Pipeline construction for preprocessing and modeling
 
-Hyperparameter tuning using GridSearchCV
+Hyperparameter tuning with GridSearchCV
 
-Model comparison based on validation performance
+Model comparison and selection
 
 Final inference using the selected model
 
-Models Implemented
+🤖 Models Used
 
-Linear Regression (baseline model)
+Linear Regression (baseline)
 
 Random Forest Regressor
 
 XGBoost Regressor (best-performing model)
 
-Results & Insights
+📊 Results & Insights
 
-Tree-based ensemble models significantly outperformed linear regression, highlighting the importance of capturing non-linear relationships and feature interactions in housing price prediction. XGBoost provided the strongest overall performance after hyperparameter tuning.
+Tree-based ensemble models outperformed linear regression, highlighting the importance of capturing non-linear relationships and feature interactions. After tuning, XGBoost achieved the strongest predictive performance.
 
-Dataset
+📂 Dataset
 
-Source: Kaggle — House Prices: Advanced Regression Techniques
+Source: House Prices: Advanced Regression Techniques (Kaggle)
 
-Data includes residential property characteristics such as location, size, condition, and amenities.
+Contains residential property attributes such as location, size, condition, and amenities
 
-Notes
+📝 Notes
 
-Kaggle submission file generation is environment-specific and not the primary focus of this repository.
+Kaggle submission file generation is environment-specific and not the primary focus of this project
 
-The project prioritizes model development, tuning, and evaluation over competition mechanics.
+Emphasis is placed on model development, tuning, and evaluation, rather than competition mechanics
 
-This repository is intended to demonstrate applied machine learning practices on a real-world regression problem.
+This notebook is intended to demonstrate applied machine learning practices on a real-world regression problem
