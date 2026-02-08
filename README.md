@@ -1,42 +1,56 @@
-# House Price Prediction 
+House Price Prediction Using Machine Learning
+Project Overview
 
-## Overview
-End-to-end machine learning project predicting residential house prices using the Kaggle
-"House Prices: Advanced Regression Techniques" dataset.
+This project focuses on building and evaluating machine learning models to predict residential housing prices using structured real-estate data. The goal is to explore how different modeling approaches perform on a complex regression problem involving categorical and numerical features, and to identify the most effective model through systematic tuning and evaluation.
 
-The project covers data exploration, feature engineering, model training, and evaluation,
-with XGBoost selected as the final model based on performance.
+Rather than optimizing for leaderboard placement, the emphasis is on the end-to-end machine learning workflow: data preparation, feature engineering, model selection, and performance comparison.
 
-## Tools & Technologies
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- XGBoost
-- Plotly
-- Jupyter Notebook
+Key Objectives
 
-## Workflow
-- Exploratory Data Analysis (EDA)
-- Data cleaning and preprocessing
-- Feature engineering and normalization
-- Categorical encoding using OneHotEncoder
-- Model training with GridSearchCV
-- Model comparison and selection
-- Final inference for Kaggle submission
+Understand the factors that influence housing prices
 
-## Models Used
-- Linear Regression
-- Random Forest
-- XGBoost (best-performing model)
+Apply feature engineering techniques to mixed data types
 
-## Notes
-This repository focuses on the full machine learning workflow, including data exploration,
-feature engineering, model training, and evaluation.
+Compare multiple regression models using consistent evaluation methods
 
-Kaggle submission file generation is environment-specific and is not the primary focus of
-this project. The emphasis is on building, tuning, and comparing predictive models rather
-than producing a competition submission file.
+Select a best-performing model based on predictive performance and generalization
 
-## Dataset
-Dataset sourced from Kaggle:
-House Prices: Advanced Regression Techniques
+Methodology
+
+Data cleaning and exploratory data analysis
+
+Categorical feature encoding using OneHotEncoder
+
+Pipeline construction for reproducible preprocessing and modeling
+
+Hyperparameter tuning using GridSearchCV
+
+Model comparison based on validation performance
+
+Final inference using the selected model
+
+Models Implemented
+
+Linear Regression (baseline model)
+
+Random Forest Regressor
+
+XGBoost Regressor (best-performing model)
+
+Results & Insights
+
+Tree-based ensemble models significantly outperformed linear regression, highlighting the importance of capturing non-linear relationships and feature interactions in housing price prediction. XGBoost provided the strongest overall performance after hyperparameter tuning.
+
+Dataset
+
+Source: Kaggle — House Prices: Advanced Regression Techniques
+
+Data includes residential property characteristics such as location, size, condition, and amenities.
+
+Notes
+
+Kaggle submission file generation is environment-specific and not the primary focus of this repository.
+
+The project prioritizes model development, tuning, and evaluation over competition mechanics.
+
+This repository is intended to demonstrate applied machine learning practices on a real-world regression problem.
