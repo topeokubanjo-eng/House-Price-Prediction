@@ -61,10 +61,13 @@ strongest predictive performance** and was selected as the final model.
 ---
 
 ## Results & Key Observations
-- Sale price shows strong relationships with overall quality, living area, and neighborhood
-- Feature engineering and proper handling of categorical variables significantly improved results
-- Model performance was driven more by data preparation and feature understanding than
-  model complexity alone
+- House prices are primarily driven by quality, usable living space, and location
+- Feature engineering and thoughtful preprocessing are the most impactful stages of the ML pipeline
+- Advanced models are effective only after strong data foundations are established
+- Predictive accuracy is as much a data problem as it is a modeling problem
+
+This project reinforced a core data science principle:
+Better data understanding consistently outperforms more complex algorithms.
 
 ---
 
@@ -80,9 +83,7 @@ strongest predictive performance** and was selected as the final model.
 
 ## Notes
 This repository emphasizes the complete data science workflow, including data exploration,
-feature engineering, and model evaluation. Kaggle submission file generation is
-environment-specific and not the primary focus of this project.
-
+feature engineering, and model evaluation.
 ---
 
 ## Project Files
