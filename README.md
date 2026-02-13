@@ -84,6 +84,21 @@ Hyperparameter tuning was conducted using `GridSearchCV` to systematically optim
 Among the evaluated models, **XGBoost achieved the strongest predictive performance** and was selected as the final model.
 
 ---
+## Model Performance
+
+Cross-validated Root Mean Squared Error (RMSE):
+
+- Linear Regression: 0.1638
+- Random Forest: 0.1505
+- XGBoost: 0.1372 (Best)
+
+Best XGBoost Parameters:
+- learning_rate = 0.1
+- max_depth = 3
+- n_estimators = 500
+
+XGBoost consistently outperformed linear and bagging-based models after feature engineering and preprocessing.
+---
 
 ## Results & Key Observations
 - Overall quality, total square footage, and neighborhood-related variables were the dominant predictors of sale price.
@@ -93,7 +108,6 @@ Among the evaluated models, **XGBoost achieved the strongest predictive performa
 
 This project reinforces a central machine learning principle:
 Model performance scales with data understanding.
-
 ---
 
 ## Tools & Technologies
