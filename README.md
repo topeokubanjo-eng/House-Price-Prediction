@@ -28,7 +28,7 @@ This project builds a complete machine learning pipeline to predict residential 
 
 ### Act 1 — Understanding the Data
 
-![EDA Dashboard](images/chart1_eda.png)
+![EDA Dashboard](chart1_eda.png)
 
 The first challenge in any price prediction problem is understanding the shape of the target variable. Raw sale prices in this dataset range from \$34,900 to \$755,000 with a mean of \$181K — but the distribution is heavily right-skewed, meaning a handful of luxury homes distort the signal for the majority.
 
@@ -45,7 +45,7 @@ Beyond the target, three variables stand out immediately as price drivers:
 
 ### Act 2 — Feature Engineering
 
-![Feature Engineering](images/chart4_features.png)
+![Feature Engineering](chart4_features.png)
 
 Raw features miss composite signals. This act shows how engineering new variables unlocks stronger predictors.
 
@@ -68,7 +68,7 @@ These multipliers translate directly into model features that add interpretable,
 
 ### Act 3 — Model Comparison
 
-![Model Comparison Dashboard](images/chart2_model_comparison.png)
+![Model Comparison Dashboard](chart2_model_comparison.png)
 
 Four models were trained and benchmarked across three preprocessing pipelines (Baseline, PCA, and Feature Engineering + PCA):
 
@@ -91,7 +91,7 @@ The **normalised leaderboard** (bottom left) scores each model across all three 
 
 ### Act 4 — Prediction Deep-Dive
 
-![Prediction Deep-Dive](images/chart3_prediction_deepdive.png)
+![Prediction Deep-Dive](chart3_prediction_deepdive.png)
 
 The final act asks the most important question: **in real dollar terms, how close are the predictions?**
 
@@ -134,16 +134,16 @@ Both notebooks expect `train.csv` and `test.csv` in the same directory.
 
 ```
 📁 House Price Prediction
-├── 📓 House_Price_Prediction_Model.ipynb     # Full pipeline: preprocessing, grid search, all models
+├── 📓 House Price Predicion.ipynb            # Original model notebook
 ├── 📓 House_Price_Visualizations.ipynb       # Standalone visual story (self-contained)
-├── 📄 train.csv                              # Training data (1,460 homes × 81 features)
+├── 📄 train.csv                              # Training data (1,460 homes x 81 features)
 ├── 📄 test.csv                               # Test data for submission
 ├── 📄 sample_submission.csv                  # Submission format reference
-└── 📁 images/
-    ├── chart1_eda.png                        # EDA: distributions & key drivers
-    ├── chart2_model_comparison.png           # Model benchmarking dashboard
-    ├── chart3_prediction_deepdive.png        # Prediction accuracy analysis
-    └── chart4_features.png                   # Feature engineering analysis
+├── 📄 data_description.txt                   # Feature documentation
+├── chart1_eda.png                            # EDA: distributions & key drivers
+├── chart2_model_comparison.png               # Model benchmarking dashboard
+├── chart3_prediction_deepdive.png            # Prediction accuracy analysis
+└── chart4_features.png                       # Feature engineering analysis
 ```
 
 ---
