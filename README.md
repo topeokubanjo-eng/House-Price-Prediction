@@ -81,7 +81,7 @@ The pool finding is counterintuitive but data-driven: in Ames, Iowa, pools tend 
 
 ![Model Comparison Dashboard](chart2_model_comparison.png)
 
-Four models were built and rigorously compared. Each was tested on data it had never seen before (the test set) and also evaluated through 5-fold cross-validation — a technique that tests the model on five different splits of the data to check that good performance isn't just luck on one particular sample.
+Four models were built and rigorously compared including two linear variants (Linear Regression and Ridge, which adds a regularization penalty to reduce overfitting). Each was tested on data it had never seen before (the test set) and also evaluated through 5-fold cross-validation — a technique that tests the model on five different splits of the data to check that good performance isn't just luck on one particular sample.
 
 | Model | Test RMSE | R² Score | CV Stability |
 |---|---|---|---|
