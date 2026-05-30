@@ -1,4 +1,4 @@
-# 🏠 House Price Prediction
+#  House Price Prediction
 ### Can a machine learning model predict what a house will sell for — and how close can it actually get?
 
 This project answers that question end-to-end. Using real housing data from Ames, Iowa (1,460 homes), I built and compared four machine learning models to predict sale prices, then rigorously tested how accurate those predictions are in real dollar terms.
@@ -85,7 +85,7 @@ Four models were built and rigorously compared including two linear variants (Li
 
 | Model | Test RMSE | R² Score | CV Stability |
 |---|---|---|---|
-| **Linear Regression** ⭐ | **0.1329** (best) | **0.905** (best) | Moderate |
+| **Linear Regression** | **0.1329** (best) | **0.905** (best) | Moderate |
 | Ridge Regression | 0.1360 | 0.901 | Good |
 | Random Forest | 0.1466 | 0.885 | Good |
 | Gradient Boosting | 0.1388 | 0.897 | **Best** |
