@@ -173,6 +173,7 @@ with cat3:
 
 # Build the full row the model expects (all columns from the original df minus SalePrice)
 input_dict = {
+    'Id':            1,
     'MSSubClass':    60,
     'MSZoning':      ms_zoning,
     'LotFrontage':   float(lot_frontage),
